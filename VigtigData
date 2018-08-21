@@ -1,4 +1,7 @@
     func pushReceived(type: PushType, id: Int) {
+
+        Jeg laver noget rod her.
+
         switch type {
         case .guide:
             tabBarController.selectedIndex = 0
