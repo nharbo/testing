@@ -1,0 +1,20 @@
+    func pushReceived(type: PushType, id: Int) {
+        switch type {
+        case .guide:
+            tabBarController.selectedIndex = 0
+        case .warning:
+            tabBarController.selectedIndex = 1
+        case .article:
+            tabBarController.selectedIndex = 2
+            let coord = children.filter { $0.self is ArticlesCoordinator }
+            if let coordinator = coord.first as? ArticlesCoordinator {
+                coordinator.articleSelected(articleId: id)
+            }
+            print("Coordinator: \(coord)")
+            
+        //kald metode på articleCoordinator didReceiveArticheFromPush(with: id)
+        //inde på articleCoordinator, start articledetailCoordinator med id
+
+        }
+        
+    }
