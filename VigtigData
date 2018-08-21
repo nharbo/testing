@@ -2,6 +2,8 @@
 
 	Now it's getting real messy! :-DDDD
 
+Even making more SICK changes..
+
         switch type {
         case .guide:
             tabBarController.selectedIndex = 0
